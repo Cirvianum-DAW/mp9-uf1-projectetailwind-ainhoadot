@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS with Parcel</title>
+    <title>SANT VICENÇ DE TORELLÓ</title>
     <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <button
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    >
-      Click me
-    </button>
-  </body>
+</head>
+
+<body>
+    <div class="min-h-screen relative">
+        <picture>
+            <img class="w-full object-cover h-screen rounded-t-lg filter brightness-75"
+                src="./imatges/portada-sant-vicenc.jpg"
+                alt="Imatge de portada de la web amb una fotografia de Sant Vicenç de Torelló">
+        </picture>
+        <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+            <div class="text-white text-center">
+                <h1 class="text-5xl font-bold font-[Koulen] tracking-wide">SANT VICENÇ DE TORELLÓ</h1>
+                <br>
+                <p class="text-3xl">I LES SEVES COLÒNIES</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="#serveis"
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            class="h-10 w-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </a>
+
+    <div id="serveis">
+        <div class="w-full h-screen relative">
+            <div class="w-full h-full left-0 top-0 absolute bg-black opacity-0"></div>
+            <div
+                class="left-1/4 top-2/4 -translate-y-1/2 -translate-x-1/2 absolute hover:bg-neutral-500 transition-all duration-300 ease-in-out flex flex-col items-center justify-center">
+                <a href='./svt/svt.html'>
+                    <div class="relative w-44 h-44 overflow-hidden">
+                        <img src="./imatges/cuadratSVT.jpg" alt="Imatges de Sant Vicenç de Torelló"
+                            class="absolute inset-0 w-full h-full object-cover filter brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center text-white text-center">
+                            <span class="text-xl font-bold">SVT</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="left-1/2 top-2/4 -translate-x-1/2 -translate-y-1/2 absolute hover:bg-neutral-500 transition-all duration-300 ease-in-out flex flex-col items-center justify-center">
+                <a href='./colonies/colonies.html'>
+                    <div class="relative w-44 h-44 overflow-hidden">
+                        <img src="./imatges/cuadratVILA.jpg"
+                            alt="Imatges de Vila-Seca (colònia de Sant Vicenç de Torelló)"
+                            class="absolute inset-0 w-full h-full object-cover filter brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center text-white text-center">
+                            <span class="text-xl font-bold">COLÒNIES</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="left-3/4 top-2/4 -translate-y-1/2 -translate-x-1/2 absolute hover:bg-neutral-500 transition-all duration-300 ease-in-out flex flex-col items-center justify-center">
+                <a href='./informacio.html'>
+                    <div class="relative w-44 h-44 overflow-hidden">
+                        <img src="./imatges/cuadratBORGO.jpg"
+                            alt="Imatges de Borgonyà (colònia de Sant Vicenç de Torelló)"
+                            class="absolute inset-0 w-full h-full object-cover filter brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center text-white text-center">
+                            <span class="text-xl font-bold">INFO</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
