@@ -52,7 +52,7 @@
     </nav>
 
     <div class="relative">
-        <img class="w-full h-96 object-cover sm:h-auto" src="./imatges/titols.jpg"
+        <img class="w-full h-96 object-cover sm:h-auto" src="./output/titols.webp"
             alt="Imatge de l'esglesia de Sant Vicenç de Torelló">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             <h1 class="flex flex-nowrap text-center text-6xl sm:text-6xl font-[Koulen]">INFORMACIÓ</h1>
@@ -72,17 +72,17 @@
                     class="text-blue-500 hover:underline">NaturaLocal</a>
             </p>
             <p class="relative text-justify mt-3 ml-5 mr-5 font-[Open+Sans] leading-loose mb-2 lg:mb-2">
-                La imatge que s'ha utilitzat a la primera pàgina (PORTADA), dins del quadrat de SVT, pertany a::
+                La imatge que s'ha utilitzat a la primera pàgina (PORTADA), dins del quadrat de SVT, pertany a:
                 <a href="https://www.facebook.com/AjStVicencT/" class="text-blue-500 hover:underline">Facebook
                     Ajuntament Sant Vicenç Torelló </a>
             </p>
             <p class="relative text-justify mt-3 ml-5 mr-5 font-[Open+Sans] leading-loose mb-2 lg:mb-2">
-                La imatge que s'ha utilitzat a la primera pàgina (PORTADA), dins del quadrat de Colònies, pertany a::
+                La imatge que s'ha utilitzat a la primera pàgina (PORTADA), dins del quadrat de Colònies, pertany a:
                 <a href="https://naturalocal.net/ca/destins/barcelona/sant-vicenc-de-torello"
                     class="text-blue-500 hover:underline">NaturaLocal</a>
             </p>
             <p class="relative text-justify mt-3 ml-5 mr-5 font-[Open+Sans] leading-loose mb-2 lg:mb-2">
-                La imatge que s'ha utilitzat a la primera pàgina (PORTADA), dins del quadrat de INFO, pertany a::
+                La imatge que s'ha utilitzat a la primera pàgina (PORTADA), dins del quadrat de INFO, pertany a:
                 <a href="https://osonaturisme.cat/es/descubre-osona/sant-vicenc-de-torello/"
                     class="text-blue-500 hover:underline">OsonaTurisme</a>
             </p>
@@ -123,6 +123,34 @@
     </div>
     <br>
     <br>
+    <div class="flex flex-wrap mx-10 mb-14">
+        <div class="relative md:w-5/6 rounded-2xl bg-gradient-to-b lg:bg-gradient-to-r from-slate-100">
+            <h1 class="relative text-3xl mt-5 ml-5">VÍDEOS I LIGHTHOUSE</h1>
+            <div class="ml-5 mr-5 h-[0.1%] lg:h-[0.1%] bg-black"></div>
+            <p class="relative text-justify mt-3 ml-5 mr-5 font-[Open+Sans] leading-loose mb-2 lg:mb-2">
+                Document d'explicació resultats LIGHTHOUSE (avans/despres):
+                <a href="https://docs.google.com/document/d/16Vm2QGKEi-mSTT6ThBTfwXqSxzFTTb8HXA5NlX_AkFY/edit?usp=sharing"
+                    class="text-blue-500 hover:underline">LIGHTHOUSE</a>
+            </p>
+            <p class="relative text-justify mt-3 ml-5 mr-5 font-[Open+Sans] leading-loose mb-2 lg:mb-2">
+                Vídeo de com optimitzar una imatge manualment amb l'eina de GIMP:
+                <a href="https://drive.google.com/file/d/1w57PYQhi_YcRL1kIFwZDAqMtEfwXKl2z/view?usp=sharing" class="text-blue-500 hover:underline">Vídeo otimització
+                    manual</a>
+            </p>
+            <p class="relative text-justify mt-3 ml-5 mr-5 font-[Open+Sans] leading-loose mb-2 lg:mb-2">
+                Vídeo de com optimitzar imatges amb l'eina de SHARP:
+                <a href="https://drive.google.com/file/d/1VKyeMo-lHs8HgHIgR6Glhd1o6eoMTlr4/view?usp=sharing"
+                    class="text-blue-500 hover:underline">Vídeo optimització sharp</a>
+            </p>
+            <p class="relative text-justify mt-3 ml-5 mr-5 font-[Open+Sans] leading-loose mb-2 lg:mb-2">
+                Vídeo resum explicant la pàgina web:
+                <a href="https://drive.google.com/file/d/11CpyrxWhy1Wh7Q7azNqnp-7RaGLsiY0-/view?usp=sharing"
+                    class="text-blue-500 hover:underline">Vídeo pàgina</a>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
     <br>
     <footer class="fixed bottom-0 left-0 right-0 bg-white rounded-lg shadow m-4 dark:bg-gray-800">
         <div class="w-full mx-auto max-w-screen-xl p-4 text-center md:flex md:items-center md:justify-between">
@@ -136,11 +164,11 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const button = document.querySelector('[data-collapse-toggle]');
             const menu = document.getElementById('navbar-default');
-    
-            button.addEventListener('click', function() {
+
+            button.addEventListener('click', function () {
                 menu.classList.toggle('hidden');
                 menu.classList.toggle('block');
             });
